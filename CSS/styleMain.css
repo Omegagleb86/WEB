@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
     font-family: "Open Sans";
+    /* box-sizing: border-box; */
 }
 
 
@@ -13,6 +14,9 @@ body{
 
 header{
     position: fixed;
+}
+H3{
+    margin-top: 10vh;
 }
 
 a{
@@ -291,14 +295,14 @@ img[src="images/BackEye.png"]{
     font-size: 1vw;
 }
 
-
+/* 
 .MainSection {
 }
 .btn {
 }
 
 .applicationDataBase_Main {
-}
+} */
 .applicationDataBase {
     width: 28.5vw;
     display: flex;
@@ -325,7 +329,7 @@ img[src="images/BackEye.png"]{
     margin-right: 1vw;
 }
 
-.selectionFromRadioList_div[style]{
+#Radio-button{
     width: 1.5vw;
     height: 1.5vw;
     border: #9B6D44 solid 5px;
@@ -358,9 +362,30 @@ option{
     color: #FFFF;
 }
 
+/*
 .SectionBlockquote {
 }
+*/
 .blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(54, 42, 31);
+    border: 0.5vw solid rgb(54, 42, 31) fill;
+    border-left: 0.5vw solid rgb(155, 109, 68);
+}
+.blockquoteIN{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#THE“{
+    font-family: "INER";
+    font-weight: 500;
+    font-size: 7vw;
+    width: 3vw;
+    color: rgb(155, 109, 68);
+    margin: 0;
+    margin-left: 1vw;
+    padding: 0;
 }
 
 
@@ -385,3 +410,116 @@ ul>li{
     list-style: disc;
 
 }
+
+#map1, #map2, #map3{
+    position: absolute;
+    top: 260vh;
+    overflow: hidden;
+}
+#map1{
+    z-index: 3;
+}
+
+#map2{
+    left: -75vw;
+    z-index: 2;
+}
+#map3{
+    left: 12vw;
+    height: 72vh;
+    width: 86.5vw;
+    transform: rotateX(180deg);
+    z-index: 2;
+}
+
+.divMAP{
+    width: calc(21vw*1.5);
+    height: 21vw;
+    border: solid 1px #FFFF;
+    border-radius: 16px;
+    padding-inline: 1vw;
+    color: #FFFF;
+    position: absolute;
+    top: 280vh;
+    left: 15vw;
+    z-index: 4;
+    background-color: rgb(0, 0, 0);
+    opacity: 60%;
+}
+
+.MainTextDivMap {
+    font-size: 4.5vw;
+    font-weight: 600;
+    margin: 0;
+
+}
+.TextDivMap {
+    margin: 0;
+    font-weight: 500;
+}
+
+
+
+
+
+footer{
+    margin-top: 79vh;
+    height: 20vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerIMG{
+    width: 45vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+
+#footer_IMG1{
+    width: 5vw;
+    height: 11vh;
+    margin-right: 1vw;
+}
+
+#footer_IMG2{
+    width: 11vw;
+}
+
+.footer_Text{
+    width: 17vw;
+}
+
+.Links{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+}
+
+.numberBTN{
+    margin-right: 3vw;
+}
+
+#footer_links_text{
+    width: 17vw;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+#footer_Phone{
+    background-color: #FFFF;
+    color: #000;
+}
+
+.links_links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
