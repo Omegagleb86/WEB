@@ -6,8 +6,14 @@
     <title>Shoes</title>
     <link rel="stylesheet" href="CSS/styleMain.css">
     <link rel="icon" href="images/DarkLion.png">
+    <!--
+    <script src="script/script.js"></script>
+    -->
 </head>
 <body>
+    <!--
+    <h1 id="elem">!!!!!!!!!!!!!!!!!!!!!</h1>
+    -->
     <header>
         <section class="header1">
             <section class="header11">
@@ -54,7 +60,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main id="main">
         <img class="MainShoe" src="images/MainShoes.png" alt="Image of Shoe">
         <div class="MainContent">
             <div class="Inter">
@@ -112,7 +118,7 @@
                 </section>
                 <section class="selectionFromRadioList">
                     <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 1</p>
-                    <div class="selectionFromRadioList_div" style=""></div><p>Радио-кнопка 1</p>
+                    <div class="selectionFromRadioList_div" id="Radio-button"></div><p>Радио-кнопка 1</p>
                     <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 2</p>
                     <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 2</p>
                     <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 3</p>
@@ -174,54 +180,53 @@
                     </section>
                 </section>
                 <section class="SectionBlockquote">
-                    <h3>
-                        Блок цитаты blockquote
-                        <div class="blockquote">
+                    <h3>Блок цитаты blockquote</h3>
+                    <div class="blockquote">
+                        <div class="blockquoteIN">
+                            <p id="THE“"><i>“</i></p>
                             <blockquote>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </blockquote>
-                            <p><strong><i>Lorem Ipsum</i></strong></p>
                         </div>
-                    </h3>
+                        <p style="margin-left: 6vw;"><strong><i>Lorem Ipsum</i></strong></p>
+                    </div>
                 </section>
-                <div>
-                    <input type="text">
-                    <input type="text">
-                    <a href=""></a>
-                    <input type="text">
-                </div>
-                <button>
-
-                </button>
-                <button>
-
-                </button>
-                <img src="" alt="">
-                <div></div>
+            <img id="map1" src="images/Basemap image2.png" alt="MAP">
+            <img id="map2" src="images/Basemap image2.png" alt="MAP">
+            <img id="map3" src="images/Basemap image2.png" alt="MAP">
+            <div class="divMAP">
+                <p class="MainTextDivMap">Адреса</p><br>
+                <p class="TextDivMap">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
             </section>
         </div>
     </main>
     <footer>
-    <div>
-        <p></p>
-        <button>
-
-        </button>
-        <a href="">
-
-        </a>
-        <a href="">
-
-        </a>
-        <a href="">
-
-        </a>
-        <a href="">
-
-        </a>
-        <a href="">
-
-        </a>
+        <div class="footerIMG">
+            <img src="/WEB/images/Lion.png" alt="" id="footer_IMG1">
+            <div class="footer_text">
+                <img class="Refreshoes" src="images/Refreshoes.png" alt="Refreshoes" id="footer_IMG2">
+                <p class="footer_Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+        <div class="Links">
+            <div class="numberBTN">
+                <p id="footer_links_text">Lorem Ipsum is simply dummy text of the printing and </p>
+                <div class="phone" id="footer_Phone">
+                    <img class="phoneIMG" src="images/Phone_black.png" alt="Telephone">
+                    <p class="phoneText">
+                        +7 (999) 999-09-99
+                    </p>
+                </div>
+            </div>
+            <div class="links_links">
+                <a href="index.html">Главная</a>
+                <a href="#main">Контентная страница</a>
+                <a href="#">Галерея</a>
+                <a href="#">Видео галерея</a>
+                <a href="#">Фото галерея</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
