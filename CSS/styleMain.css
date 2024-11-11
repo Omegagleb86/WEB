@@ -412,41 +412,37 @@ ul>li{
 
 }
 
-#map1, #map2, #map3{
-    position: absolute;
-    top: 260vh;
-    overflow: hidden;
-}
-#map1{
-    z-index: 3;
+.MAP{
+    width: 90vw;
+    height: 69vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/WEB/images/Basemap\ image2.png);
+    margin-top: 3vh;
 }
 
-#map2{
-    left: -75vw;
-    z-index: 2;
-}
-#map3{
-    left: 12vw;
-    height: 72vh;
+#map1{
+    overflow: hidden;
     width: 86.5vw;
-    transform: rotateX(180deg);
-    z-index: 2;
+    height: 72vh;
 }
+
 
 .divMAP{
+    margin-left: 15vw;
     width: calc(21vw*1.5);
     height: 21vw;
     border: solid 1px #FFFF;
     border-radius: 16px;
     padding-inline: 1vw;
     color: #FFFF;
-    position: absolute;
-    top: 280vh;
-    left: 15vw;
     z-index: 4;
     background-color: rgb(0, 0, 0);
     opacity: 60%;
+    z-index: 2;
 }
+
+/*
 
 .MainTextDivMap {
     font-size: 4.5vw;
@@ -459,12 +455,11 @@ ul>li{
     font-weight: 500;
 }
 
-
+*/
 
 
 
 footer{
-    margin-top: 79vh;
     height: 20vh;
     background-color: #000;
     display: flex;
