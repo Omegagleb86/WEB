@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="script/script.js"></script>
     -->
 </head>
+
 <body>
     <!--
     <h1 id="elem">!!!!!!!!!!!!!!!!!!!!!</h1>
@@ -46,17 +48,17 @@
                         +7 (999) 999-09-99
                     </p>
                 </div>
-            </section>  
+            </section>
         </section>
         <section class="header2">
             <div class="header21">
-                <a href="/WEB/index.html">
+                <a class="headerImage1" href="/WEB/index.html">
                     Главная
                 </a>
-                <a href="/WEB/galery.html">
+                <a class="headerImage2" "/WEB/galery.html">
                     Галерея<img class="downArrow" src="images/downArrow.png" alt="Gallary">
                 </a>
-                <a href="">
+                <a class="headerImage3" href="">
                     Контентная страница
                 </a>
             </div>
@@ -65,15 +67,32 @@
     <main id="main">
         <img class="MainShoe" src="images/MainShoes.png" alt="Image of Shoe">
         <p class="PhotoGalery"><strong>Фото Галерея</strong></p>
-            <section>
+        <section>
+            <div class="gallery-container">
+                <button class="arrow left" id="prev"><</button>
+                <div class="gallery">
+                    <div class="gallery-item"><img src="images/17.png"></div>
+                    <div class="gallery-item"><img src="images/33.png"></div>
+                    <div class="gallery-item"><img src="images/35.png"></div>
+                    <div class="gallery-item"><img src="images/43.png"></div>
+                    <div class="gallery-item"><img src="images/46.png"></div>
+                    <div class="gallery-item"><img src="images/61.png"></div>
+                    <div class="gallery-item"><img src="images/67.png"></div>
+                    <div class="gallery-item"><img src="images/70.png"></div>
+                </div>
+                <button class="arrow right" id="next">></button>
+            </div>
+        </section>
+        <section>
             <div class="MAP">
-                
+
                 <div class="divMAP">
                     <p class="MainTextDivMap">Адреса</p><br>
-                    <p class="TextDivMap">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    <p class="TextDivMap">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                 </div>
             </div>
-            </section>
+        </section>
         </div>
     </main>
     <footer>
@@ -96,7 +115,7 @@
             </div>
             <div class="links_links">
                 <a href="index.html">Главная</a>
-                <a href="#main">Контентная страница</a> 
+                <a href="#main">Контентная страница</a>
                 <!-- СДЕЛАТЬ ТАК ЧТОБЫ HEAD БЫЛ ВЫШЕ КАРТЫ, ЭТО ВАЖНО -->
                 <a href="#">Галерея</a>
                 <a href="#">Видео галерея</a>
@@ -104,5 +123,7 @@
             </div>
         </div>
     </footer>
+    <script src="script/script.js"></script>
 </body>
+
 </html>
