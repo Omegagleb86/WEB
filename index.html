@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="script/script.js"></script>
     -->
 </head>
+
 <body>
     <!--
     <h1 id="elem">!!!!!!!!!!!!!!!!!!!!!</h1>
@@ -46,14 +48,14 @@
                         +7 (999) 999-09-99
                     </p>
                 </div>
-            </section>  
+            </section>
         </section>
         <section class="header2">
             <div class="header21">
                 <a href="/WEB/index.html">
                     Главная
                 </a>
-                <a href="/WEB/galery.html">
+                <a href="/galery.html">
                     Галерея<img class="downArrow" src="images/downArrow.png" alt="Gallary">
                 </a>
                 <a href="">
@@ -66,7 +68,8 @@
         <img class="MainShoe" src="images/MainShoes.png" alt="Image of Shoe">
         <div class="MainContent">
             <div class="Inter">
-                <p class="InterText">Заголовок H1</p><p class="InterText">Font Inter 60px</p>
+                <p class="InterText">Заголовок H1</p>
+                <p class="InterText">Font Inter 60px</p>
             </div>
             <H5>Хлебные крошки</H5>
             <div class="bread">
@@ -78,29 +81,29 @@
                 <form>
                     <div class="EnterValues">
                         <p class="MainSection">Заполните поля</p>
-                        <input class="Values" type="text" placeholder="Имя">
-                        <input class="Values" type="tel" placeholder="Телефон">
-                        <input class="Values" type="email" placeholder="E-mail">
+                        <input class="Values" type="text" placeholder="Имя" required>
+                        <input class="Values" type="tel" placeholder="Телефон" required>
+                        <input class="Values" type="email" placeholder="E-mail" required>
                         <div class="EnterValues_div">
-                            <input type="checkbox">
+                            <input type="checkbox" required>
                             <p class="EnterValues_p">Соглашаюсь на обратку персональных данных</p>
                         </div>
-                        <input class="btn" type="button" value="Отправить">
+                        <input class="btn" type="submit" value="Отправить">
                     </div>
                 </form>
                 <form>
                     <div class="EnterValues , EnterValues2">
-                        <p class="MainSection">Авторизации</p>
-                        <input class="Values" type="email" placeholder="Email">
+                        <p class="MainSection">Авторизация</p>
+                        <input class="Values" type="email" placeholder="Email" required>
                         <div class="Password">
-                            <input class="Values" type="password" placeholder="Пароль"><img src="images/BackEye.png">
+                            <input class="Values" type="password" placeholder="Пароль"><img src="images/BackEye.png" required>
                         </div>
                         <div class="EnterValues_div">
                             <a class="recoveryPassword" href="#">Восстановить пароль</a>
                         </div>
-                        <input class="btn" type="button" value="Отправить">
+                        <input class="btn" type="submit" value="Отправить">
                     </div>
-                </form>     
+                </form>
             </div>
             <section>
                 <section>
@@ -110,26 +113,34 @@
                         </p>
                         <div class="applicationDataBase_Main">
                             <div class="applicationDataBase">
-                                <input type="checkbox"><p>Соглашаюсь на обратку персональных данных</p>
+                                <input type="checkbox">
+                                <p>Соглашаюсь на обратку персональных данных</p>
                             </div>
                             <div class="applicationDataBase">
-                                <input type="checkbox" value="yes"><p>Соглашаюсь на обратку персональных данных</p>
+                                <input type="checkbox" value="yes">
+                                <p>Соглашаюсь на обратку персональных данных</p>
                             </div>
                         </div>
                     </section>
                 </section>
                 <section class="selectionFromRadioList">
-                    <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 1</p>
-                    <div class="selectionFromRadioList_div" id="Radio-button"></div><p>Радио-кнопка 1</p>
-                    <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 2</p>
-                    <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 2</p>
-                    <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 3</p>
-                    <div class="selectionFromRadioList_div"></div><p>Радио-кнопка 3</p>
+                    <div class="selectionFromRadioList_div"></div>
+                    <p>Радио-кнопка 1</p>
+                    <div class="selectionFromRadioList_div" id="Radio-button"></div>
+                    <p>Радио-кнопка 1</p>
+                    <div class="selectionFromRadioList_div"></div>
+                    <p>Радио-кнопка 2</p>
+                    <div class="selectionFromRadioList_div"></div>
+                    <p>Радио-кнопка 2</p>
+                    <div class="selectionFromRadioList_div"></div>
+                    <p>Радио-кнопка 3</p>
+                    <div class="selectionFromRadioList_div"></div>
+                    <p>Радио-кнопка 3</p>
                 </section>
                 <p class="ChooseFromList">Выбор из списка</p>
                 <section class="SC2">
                     <section class="twoLists">
-                        <select  class="Select">
+                        <select class="Select">
                             <option>Lorem ipsun</option>
                             <option>Lorem ipsun, dolor smita</option>
                             <option>Lorem ipsun, dolor smita</option>
@@ -187,20 +198,23 @@
                         <div class="blockquoteIN">
                             <p id="THE“"><i>“</i></p>
                             <blockquote>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </blockquote>
                         </div>
                         <p style="margin-left: 6vw;"><strong><i>Lorem Ipsum</i></strong></p>
                     </div>
                 </section>
-            <div class="MAP">
-                
-                <div class="divMAP">
-                    <p class="MainTextDivMap">Адреса</p><br>
-                    <p class="TextDivMap">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <div class="MAP">
+
+                    <div class="divMAP">
+                        <p class="MainTextDivMap">Адреса</p><br>
+                        <p class="TextDivMap">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div>
     </main>
     <footer>
@@ -223,7 +237,7 @@
             </div>
             <div class="links_links">
                 <a href="index.html">Главная</a>
-                <a href="#main">Контентная страница</a> 
+                <a href="#main">Контентная страница</a>
                 <!-- СДЕЛАТЬ ТАК ЧТОБЫ HEAD БЫЛ ВЫШЕ КАРТЫ, ЭТО ВАЖНО -->
                 <a href="#">Галерея</a>
                 <a href="#">Видео галерея</a>
@@ -232,4 +246,5 @@
         </div>
     </footer>
 </body>
+
 </html>
