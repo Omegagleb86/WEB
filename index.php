@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes</title>
-    <link rel="stylesheet" href="CSS/styleMain.css">
+    <link rel="stylesheet" href="css/styleMain.css">
     <link rel="icon" href="images/DarkLion.png">
     <!--
     <script src="script/script.js"></script>
@@ -20,7 +20,7 @@
         <section class="header1">
             <section class="header11">
                 <div class="logo">
-                    <a href="/WEB/index.html">
+                    <a href="/index.php">
                         <img class="Lion" src="images/Lion.png" alt="Lion">
                         <img class="Refreshoes" src="images/Refreshoes.png" alt="Refreshoes">
                     </a>
@@ -52,13 +52,13 @@
         </section>
         <section class="header2">
             <div class="header21">
-                <a href="/WEB/index.html">
+                <a href="/index.php">
                     Главная
                 </a>
                 <a href="/galery.html">
                     Галерея<img class="downArrow" src="images/downArrow.png" alt="Gallary">
                 </a>
-                <a href="">
+                <a href="#">
                     Контентная страница
                 </a>
             </div>
@@ -78,36 +78,106 @@
                 <a class="breaddot" href="#">Главная</a>
             </div>
             <div class="EnterValuesMaindiv">
-                <form>
+                <form method="POST">
                     <div class="EnterValues">
                         <p class="MainSection">Заполните поля</p>
-                        <input class="Values" type="text" placeholder="Имя" required>
-                        <input class="Values" type="tel" placeholder="Телефон" required>
-                        <input class="Values" type="email" placeholder="E-mail" required>
+                        <input class="Values" name="Ima" type="text" placeholder="Имя" required>
+                        <input class="Values" name="telefon" type="tel" placeholder="Телефон" required>
+                        <input class="Values" name="pochta" type="email" placeholder="E-mail" required>
                         <div class="EnterValues_div">
                             <input type="checkbox" required>
                             <p class="EnterValues_p">Соглашаюсь на обратку персональных данных</p>
                         </div>
                         <input class="btn" type="submit" value="Отправить">
                     </div>
+
                 </form>
-                <form>
-                    <div class="EnterValues , EnterValues2">
-                        <p class="MainSection">Авторизация</p>
-                        <input class="Values" type="email" placeholder="Email" required>
-                        <div class="Password">
-                            <input class="Values" type="password" placeholder="Пароль"><img src="images/BackEye.png" required>
+                <!--
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $name = htmlspecialchars($_POST['Ima']);
+                    $phone = htmlspecialchars($_POST['telefon']);
+                    $email = htmlspecialchars($_POST['pochta']);
+                ?>
+                <div class="result">
+                    <h2>Вы ввели следующие данные:</h2>
+                    <div class="data-item">Имя: <?php echo $name; ?></div>
+                    <div class="data-item">Телефон: <?php echo $phone; ?></div>
+                    <div class="data-item">Почта: <?php echo $email; ?></div>
+                </div>
+
+                <?php
+                }
+                ?>
+                -->
+                    <form>
+                        <div class="EnterValues , EnterValues2">
+                            <p class="MainSection">Авторизация</p>
+                            <input class="Values" type="email" placeholder="Email" required>
+                            <div class="Password">
+                                <input class="Values" type="password" placeholder="Пароль"><img src="images/BackEye.png" required>
+                            </div>
+                            <div class="EnterValues_div">
+                                <a class="recoveryPassword" href="#">Восстановить пароль</a>
+                            </div>
+                            <input class="btn" type="submit" value="Отправить">
                         </div>
-                        <div class="EnterValues_div">
-                            <a class="recoveryPassword" href="#">Восстановить пароль</a>
-                        </div>
-                        <input class="btn" type="submit" value="Отправить">
-                    </div>
-                </form>
+                    </form>
             </div>
+
+            
+            <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $name = htmlspecialchars($_POST['Ima']);
+                    $phone = htmlspecialchars($_POST['telefon']);
+                    $email = htmlspecialchars($_POST['pochta']);
+                ?>
+                <div class="result" style="
+        
+        border: solid #FFFF 1px;
+        border-radius: 16px 16px 16px 32px;
+        display: flex;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin: 2vw
+        
+        ">
+                    <h2>Вы ввели следующие данные:</h2>
+                    <div class="data-item" style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2vw;
+                    ">
+                        Имя: <?php echo $name; ?>
+                    </div>
+                    <div class="data-item" style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2vw;
+                    ">
+                        Телефон: <?php echo $phone; ?>
+                    </div>
+                    <div class="data-item" style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2vw;
+                    ">
+                        Почта: <?php echo $email; ?>
+                    </div>
+                </div>
+
+                <?php
+                }
+                ?>
+
+            
             <section>
                 <section>
                     <section>
+                    
                         <p class="mainSelection">
                             Элементы чекбоксов, радио кнопок, выбор из списка
                         </p>
@@ -219,7 +289,7 @@
     </main>
     <footer>
         <div class="footerIMG">
-            <img src="/WEB/images/Lion.png" alt="" id="footer_IMG1">
+            <img src="/images/Lion.png" alt="" id="footer_IMG1">
             <div class="footer_text">
                 <img class="Refreshoes" src="images/Refreshoes.png" alt="Refreshoes" id="footer_IMG2">
                 <p class="footer_Text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -236,7 +306,7 @@
                 </div>
             </div>
             <div class="links_links">
-                <a href="index.html">Главная</a>
+                <a href="index.php">Главная</a>
                 <a href="#main">Контентная страница</a>
                 <!-- СДЕЛАТЬ ТАК ЧТОБЫ HEAD БЫЛ ВЫШЕ КАРТЫ, ЭТО ВАЖНО -->
                 <a href="#">Галерея</a>
